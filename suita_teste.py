@@ -1,5 +1,4 @@
 import unittest
-import HtmlTestRunner
 
 from teste_CRR import DisplayedMessages
 from teste_CRR import SubmitFormAddress
@@ -7,6 +6,7 @@ from teste_CRR import SubmitFormEmail
 from teste_CRR import SubmitFormPhone
 from teste_CRR import OpenPage
 from html_test_runner import HTMLTestRunner
+import HTMLTestRunner
 
 
 class TestSuite(unittest.TestCase):
@@ -22,4 +22,5 @@ class TestSuite(unittest.TestCase):
         ])
         runner = HTMLTestRunner.HTMLTestRunner(combine_reports=True, report_title="Functioning testing",
                                                report_name="Sumar teste")
+
         runner.run(tests_to_run)
