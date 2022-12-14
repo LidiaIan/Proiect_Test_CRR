@@ -5,6 +5,7 @@ from teste_CRR import SubmitFormAddress
 from teste_CRR import SubmitFormEmail
 from teste_CRR import SubmitFormPhone
 from teste_CRR import OpenPage
+from teste_CRR import AccessLinks
 from html_test_runner import HTMLTestRunner
 import HTMLTestRunner
 
@@ -19,6 +20,7 @@ class TestSuite(unittest.TestCase):
             unittest.defaultTestLoader.loadTestsFromTestCase(SubmitFormAddress),
             unittest.defaultTestLoader.loadTestsFromTestCase(SubmitFormEmail),
             unittest.defaultTestLoader.loadTestsFromTestCase(SubmitFormPhone),
+            unittest.defaultTestLoader.loadTestsFromTestCase(AccessLinks)
         ])
         runner = HTMLTestRunner.HTMLTestRunner(combine_reports=True, report_title="Functioning testing",
                                                report_name="Sumar teste")
