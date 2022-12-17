@@ -1,11 +1,13 @@
 import unittest
 
-from teste_CRR import DisplayedMessages
-from teste_CRR import SubmitFormAddress
-from teste_CRR import SubmitFormEmail
-from teste_CRR import SubmitFormPhone
-from teste_CRR import OpenPage
-from teste_CRR import AccessLinks
+from test_open_form import OpenPage
+from test_displayed_messages import DisplayedMessages
+from test_links import AccessLinks
+from test_submit_address import SubmitFormAddress
+from test_submit_email import SubmitFormEmail
+from test_submit_phone import SubmitFormPhone
+
+
 from html_test_runner import HTMLTestRunner
 import HTMLTestRunner
 
